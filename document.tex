@@ -1,0 +1,150 @@
+% Change the size of the paper your CV will be printed on
+% by entering either a4paper or letterpaper here.
+\documentclass[a4paper]{ReadableCV}
+
+% Set color of body text
+\color{black}
+
+\begin{document}
+	
+	% Set page colour using X11names colour definitions
+	\setPageColour{white}
+	
+	% Set header details being aligned to the right or left
+	% If an image is displayed it will be shown on the
+	% opposite side to what is set here.
+	\setHeaderAlignment{left}
+	
+	% Set colour of all headings, header highlights
+	\setHeadingColours{SlateGray3}
+	
+	% Set image file to be displayed in header
+	% If left blank no image is displayed
+	%\setImage{profilepic.jpg}
+	
+	% If image not being displayed then user can
+	% move contact details to opposite side of
+	% page to name and jobtitle.
+	% Use either opposite or below
+	\setContactLocation{opposite}
+	
+	% Set up information needed for header.
+	% If you do not want to include certain
+	% information use {} instead. 
+	\setYourName{Stefanos Stefanou}
+	\setYourJobTitle{Software Engineer}
+	\setYourMobileNo{+44(0)7706066959}
+	\setYourHomeNo{TODO}
+	\setYourEmailAddr{stefannstefanou@gmail.com}
+	\setYourWebAddr{http://stefanos.isactually.cool}
+	
+	% Display header information 
+	\showHeader
+	
+	% Set up whether section headings are on the left or right
+	\setSectionAlignment{left}
+	
+	% Creates a new section title / heading
+	\newHeading{Personal Profile}
+	
+	I am a Software engineer based in Hemsworth, UK. I am enthusiastic about everything I do, I behave well under pressure, and I am passionate about excellence. I can acquire and apply knowledge fast, and I adapt quickly to any situation. I have over three years of commercial functional scala experience in various firms, working in data-intense event-sourced and distributed systems. My hobbies include interest in Mathematics, Physics and Functional programming.
+	
+	\newHeading{Core Skills}
+	
+	% Add up to nine core skills. If they are
+	% all not needed use {} instead.
+	\addSkills{Typelevel Scala}
+	{Fs2}
+	{Kafka}
+	{Akka}
+	{MongoDB,Elastic,Solr}
+	{PostgresSQL}
+	{Neo4J}
+	{Docker}
+	{AWS}
+	
+	\newHeading{Career Summary}
+	
+	% Set up whether job title or company printed first
+	% Either use JobFirst or CompanyFirst
+	\setJobCompanyOrder{JobFirst}
+	
+	% This displays the whole of the role information
+	% including dates [1], job title [2],
+	% company name [3] and role summary [4]
+	% If a full history is required use \newrole and \roleAchievements
+	% If only a brief description needed then just use \newrole
+	\newRole{6/2021 - present}
+	{Software Engineer}
+	{GB Group Plc}
+	{As a software engineer at GBG, i am working on the 'Investigate' Product, providing identity identification, location inteligence and fraud prevention on B2B clients around the world}
+	
+	\newRole{5/2020 - 6/2021}
+	{Software Engineer}
+	{J Sainsburys PLC - Sainsburys Tech}
+	{Supporting the unified pricing and promotions system  of the Sainsburys Group, a event-sourced data-intensive distributed system, Extensive use of Kafka,Akka,Fs2 as well as various Typelevel libraries }
+	
+	\newRole{2/2019 - 5/2020}
+	{Ascosiate Software Engineer}
+	{TALOS Software LTD}
+	{As an ascosiate software engineer at TALOS, i worked extensively on the companys biggest product yet, 'Simplybook', mainly around the 
+	backend system. Use of Scala play, Typelevel Scala, Akka as well as Cypress/Gatling for testing purposes }
+	
+	
+	\newRole{10/2018 - 2/2019}
+	{Research Assistant}
+	{University of Reading}
+	{Developing customized filesystem solutions for High- performance computers using FUSE(ESIWACE Project), extensive use of C, Python, and non relational databases such as MongoDB and ElasticSearch}
+	
+	% move, duplicate, delete or comment out the following line if necessary
+	\newpage
+	
+	% This is training you have done in your own time
+	\newHeading{Dinstictions}
+	
+	\newRole{2018}
+	{AIIA Low Latency Video Streaming Challenge 2018 (1rst)}
+	{Aristotle University of Thessaloniki, Greece}
+	%{MULTIDRONE/ICARUS/AIIA Research Lab : Low Latency Video Streaming Challenge 2018 }
+	{Developing a customized solution for ICARUS LAB experimental surveillance drones, transfering real-time video and telemetry data with minimal latency, the end-result, alanStreamer was written using C++, C, QT, gstream}
+	
+	\newRole{2016}
+	{International Open Bidding Competition 2016 (Team 2nd)}
+	{Organiser : Université Sorbonne Paris Nord, France}
+	{Functional prototype of a web information system while meeting all requirements set by a project committee,Extensive use of PHP, HTML/CSS,  Node.js and MySQL}
+	
+	\newRole{2015}
+	{28th National Information Technology Competition (30th place,Finals)}
+	{Organiser : National Technical University of Athens}
+	{Greece's national algorithmic student competition, finishing at 30th place (final stage), nation-wide, Various problems
+	focused on Dynamic Programming, Minimum Spanning Trees and various number-theory related algorithms}
+	
+	
+
+	
+	% School education
+	\newHeading{Interesting Projects}
+	
+	\newCourse{2016}{\href{https://github.com/noReasonException/DummyFileSystem}{DFS} }{\small{Dummy File System, C and Linux Kernel 4.0.X}}{}
+	\newCourse{2016}{\href{https://github.com/noReasonException/SScheduler}{SScheduler} }{\small{Stefano's Scheduler, simple linux scheduler implementation for kernel 4.X}}{}
+	\newCourse{2018}{\href{https://www.bookworld.gr/gr/book/bkid/234405/java-gia-ligous}{'Java for the few'(Book)} }{\small{Worked on 3 chapters, Book is used on 2 universities (Uniwa,AUEB) }}{}
+	
+	
+	\newHeading{Education}
+	
+	\newRole{2018-2022}
+	{Bsc Computer Science}
+	{University of Reading}
+	{\begin{itemize}
+			\item First Class Degree
+			\item Dissertation: An AI-assisted decision making system for thyroid nodule classification 
+	\end{itemize}
+	}
+	
+	
+	
+	\clearpage
+	
+	
+	
+\end{document}
